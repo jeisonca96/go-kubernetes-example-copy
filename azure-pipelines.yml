@@ -12,5 +12,5 @@ steps:
     echo $(modulePath)
     go version
     go run src/main.go
-  workingDirectory: '$(modulePath)'
+  workingDirectory: '$(GOPATH)/src/github.com/$(build.repository.name)'
   displayName: 'Get dependencies, then build'
