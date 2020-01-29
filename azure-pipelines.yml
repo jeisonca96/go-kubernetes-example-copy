@@ -16,7 +16,7 @@ variables:
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
   PLUGIN_DIR: '$(GOBIN)'
-  modulePath: '$(GOPATH)/src/hello' # Path to the module's code
+  modulePath: '$(GOPATH)/src' # Path to the module's code
 
 steps:
 - script: |
