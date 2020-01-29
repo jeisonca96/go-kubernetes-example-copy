@@ -38,6 +38,7 @@ steps:
 
 - script: |
     go version
+    ls
     go run main.go
   workingDirectory: '$(GOPATH)/src'
   displayName: 'Get dependencies, then build'
