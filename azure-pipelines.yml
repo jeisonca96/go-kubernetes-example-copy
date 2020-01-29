@@ -9,6 +9,7 @@ variables:
   
 steps:
 - script: |
+    echo $(modulePath)
     go version
     go run src/main.go
   workingDirectory: '$(modulePath)'
