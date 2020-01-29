@@ -38,13 +38,6 @@ steps:
 
 - script: |
     go version
-    if [ -f Gopkg.toml ]; then
-        curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-        dep ensure
-    else
-      echo "ERROR no Gopkg.toml found!"
-      exit 1
-    fi
     go run main.go
   workingDirectory: '$(GOPATH)/src'
   displayName: 'Get dependencies, then build'
